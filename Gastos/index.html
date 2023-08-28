@@ -1,0 +1,41 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Captura de Gastos</title>
+        <!--link rel="stylesheet" href="../css/styles.css"-->
+        <!--llink rel="stylesheet" href="../css/buttons.css"-->
+        <link rel="stylesheet" href="../css/styleC.css">    
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>Captura de Gastos</h1>
+                <a href="../index.html" class="btn-back">Volver</a>
+            </header>
+
+            <form id="gastoForm" class="form">
+                <select id="tipoGastos" required>
+                    <option value="MateriaPrima">Materia Prima</option>
+                    <option value="Operacion">Operación</option>
+                    <option value="Nomina">Nómina</option>
+                    <option value="Publicidad">Publicidad</option>
+                    <option value="Otro">Otro</option>
+                </select>
+
+                <label for="cantidadGasto">Cantidad:</label>
+                <input type="number" id="cantidadGasto" step="0.01" required>
+
+                <label for="comentarios">Comentarios:</label>
+                <textarea id="comentarios" rows="3"></textarea>
+
+                <button type="submit" class="btn btn-1">Guardar</button>
+            </form>
+        </div>
+        <script src="../js/mainExpense.js"></script>
+    </body>
+</html>

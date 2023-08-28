@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Clientes</title>
+    <!--link rel="stylesheet" href="../css/styles.css"-->
+    <!--llink rel="stylesheet" href="../css/buttons.css"-->
+    <link rel="stylesheet" href="../css/styleC.css"> 
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Gestión de Clientes</h1>
+            <a href="index.html" class="btn-back">Regresar</a>
+        </header>
+
+        <section>
+            <label for="operation">Operación:</label>
+            <select id="operation">
+                <option value="" disabled selected>Selecciona una operación</option>
+                <option value="alta">Alta de Cliente</option>
+                <option value="baja">Baja de Cliente</option>
+                <option value="consulta">Consulta de Cliente</option>
+            </select>
+        </section>
+
+        <section id="formContainer"></section>
+    </div>
+
+    <script src="loadDataClients.js"></script>
+</body>
+</html>

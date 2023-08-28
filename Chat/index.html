@@ -1,0 +1,32 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatea con el Gurú</title>
+    <!--link rel="stylesheet" href="../css/styles.css"-->
+    <!--llink rel="stylesheet" href="../css/buttons.css"-->
+    <link rel="stylesheet" href="../css/styleC.css">
+</head>
+<body>
+    <div class="container">
+        <!--<img src="../images/logo.png" alt="Logo" class="logo">-->
+        <h1>Agente IA</h1>
+        <form id="chat-form" class="form">
+            <label for="mytext">Escribe tu pregunta:</label>
+            <input type="text" id="mytext" required>
+            <button type="submit" class="btn btn-1">Submit</button>
+        </form>
+        <div>
+            <h2>Respuesta:</h2>
+            <textarea id="response" rows="20" readonly></textarea>
+        </div>
+        <div id="loader" class="loader"></div>
+    </div>
+    <script src="../js/chat.js"></script>
+</body>
+</html>

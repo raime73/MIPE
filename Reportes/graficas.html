@@ -1,0 +1,70 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--link rel="stylesheet" href="../css/styles.css"-->
+    <!--llink rel="stylesheet" href="../css/buttons.css"-->
+    <link rel="stylesheet" href="../css/styleC.css">
+    <title>Gráficas</title>
+</head>
+<body>
+    <header>
+        <a href="../index.html" class="btn-back">Volver</a>
+    </header>
+
+    <div class="caja-padre">
+        <div class="contenedor">
+            <h2>Ventas Acumuladas</h2>
+
+            <label for="fechaInicio">Fecha de inicio:</label>
+            <input type="date" id="fechaInicio" class="date-input">
+            <label for="fechaFinal">Fecha final:</label>
+            <input type="date" id="fechaFinal" class="date-input">
+            <button id="aplicarRango">Aplicar</button>
+            
+            <div class="skills">
+                <div class="detalles">
+                    <span>Ventas</span>
+                    </div><span id="sales"></span>
+                    <div class="menu">
+                        <div id="sales-menu"></div>
+                    </div>
+                    
+                </div>
+
+            <div class="skills">
+                <div class="detalles">
+                    <span>Costo Extra</span>
+                    </div><span id="ecost"></span>
+                    <div class="menu">
+                        <div id="ecost-menu"></div>
+                    </div>
+                        
+                    </div>
+                <div class="skills">
+                    <div class="detalles">
+                        <span>Costo de Entrega</span>
+                        </div><span id="dcost"></span>
+                        <div class="menu">
+                            <div id="dcost-menu"></div>
+                        </div>
+                            
+                    </div>
+    
+            </div>
+            <div class="ventasTotales">
+                <span id="ventasTotales"></span>
+            </div>
+ 
+        </div>
+    </div>
+
+    
+
+    <script src="../js/graficas.js"></script>
+</body>
+</html>

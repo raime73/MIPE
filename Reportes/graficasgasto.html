@@ -1,0 +1,91 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--link rel="stylesheet" href="../css/styles.css"-->
+    <!--llink rel="stylesheet" href="../css/buttons.css"-->
+    <link rel="stylesheet" href="../css/styleC.css">
+    <title>Gráficas</title>
+</head>
+<body>
+    <header>
+        <a href="../index.html" class="btn-back">Volver</a>
+    </header>
+
+    <div class="caja-padre">
+        <div class="contenedor">
+            <h2>Gastos Acumulados</h2>
+
+            <label for="fechaInicio">Fecha de inicio:</label>
+            <input type="date" id="fechaInicio" class="date-input">
+            <label for="fechaFinal">Fecha final:</label>
+            <input type="date" id="fechaFinal" class="date-input">
+            <button id="aplicarRango">Aplicar</button>
+        
+
+            <div class="skills">
+                <div class="detalles">
+                    <span>Materia Prima</span>
+                    </div><span id="raw"></span>
+                    <div class="menu">
+                        <div id="raw-menu"></div>
+                    </div>
+                    
+                </div>
+
+            <div class="skills">
+                <div class="detalles">
+                    <span>Operación</span>
+                    </div><span id="op"></span>
+                    <div class="menu">
+                        <div id="op-menu"></div>
+                    </div>
+                        
+                    </div>
+            <div class="skills">
+                <div class="detalles">
+                    <span>Nómina</span>
+                    </div><span id="nom"></span>
+                    <div class="menu">
+                        <div id="nom-menu"></div>
+                    </div>
+                        
+                </div>
+
+            <div class="skills">
+                <div class="detalles">
+                    <span>Publicidad</span>
+                    </div><span id="pub"></span>
+                    <div class="menu">
+                        <div id="pub-menu"></div>
+                    </div>
+                        
+                </div>
+                
+            <div class="skills">
+                <div class="detalles">
+                    <span>Otro</span>
+                    </div><span id="otro"></span>
+                    <div class="menu">
+                        <div id="otro-menu"></div>
+                    </div>
+                        
+                </div>
+    
+            </div>
+            <div class="gastosTotales">
+                <span id="gastosTotales"></span>
+            </div>
+ 
+        </div>
+    </div>
+
+    
+
+    <script src="../js/graficasgasto.js"></script>
+</body>
+</html>

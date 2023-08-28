@@ -1,0 +1,51 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Captura de Ventas</title>
+        <!--link rel="stylesheet" href="../css/styles.css"-->
+        <!--llink rel="stylesheet" href="../css/buttons.css"-->
+        <link rel="stylesheet" href="../css/styleC.css">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>Captura de Ventas</h1>
+                <a href="../index.html" class="btn-back">Volver</a>
+            </header>
+            
+            <form id="ventaForm" class="form">
+                <label for="productoSelect">Producto:</label>
+                <select id="productoSelect" required></select>
+
+                <label for="clienteSelect">Cliente:</label>
+                <select id="clienteSelect" required></select>
+
+                <label for="precioUnitario">Precio Unitario:</label>
+                <input type="number" id="precioUnitario" step="0.01" required>
+
+                <label for="cantidad">Cantidad:</label>
+                <input type="number" id="cantidad" required>
+
+                <label for="costoExtras">Costo Extras:</label>
+                <input type="number" id="costoExtras" step="0.01">
+
+                <label for="costoEntrega">Costo de Entrega:</label>
+                <input type="number" id="costoEntrega" step="0.01" placeholder="Zona" required>
+
+                <label for="comentarios">Comentarios:</label>
+                <textarea id="comentarios" rows="3"></textarea>
+
+                <label for="total">Total:</label>
+                <span id="total">0.00</span>
+
+                <button type="submit" class="btn btn-1">Guardar</button>
+            </form>
+        </div>
+        <script src="../js/main.js"></script>
+    </body>
+</html>

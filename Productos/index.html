@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Productos</title>
+    <!--link rel="stylesheet" href="../css/styles.css"-->
+    <!--llink rel="stylesheet" href="../css/buttons.css"-->
+    <link rel="stylesheet" href="../css/styleC.css"></head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Gestión de Productos</h1>
+            <a href="../index.html" class="btn-back">Regresar</a>
+        </header>
+
+        <section>
+            <label for="operation">Operación:</label>
+            <select id="operation">
+                <option value="" disabled selected>Selecciona una operación</option>
+                <option value="alta">Alta de Producto</option>
+                <option value="baja">Baja de Producto</option>
+                <option value="consulta">Consulta de Productos</option>
+            </select>
+        </section>
+
+        <section id="formContainer"></section>
+    </div>
+
+    <script src="../js/loadData.js"></script>
+</body>
+</html>
