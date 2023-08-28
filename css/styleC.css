@@ -24,8 +24,7 @@ h1 {
 form {
     display: flex;
     flex-direction: column;
-    width: 90%;
-    max-width: 300px;
+    width: 300px;
     margin: 0 auto;
     background-color: #c3b9ae;
     border-radius: 15px;
@@ -165,8 +164,8 @@ tr:nth-child(even) {
 }
 
 .caja-padre {
-    width: 90%;
-    max-width: 590px;
+    width: 40%;
+    min-width: 590px;
     position: absolute;
     transform: translate(-50%, -50%);
     left: 50%;
@@ -294,8 +293,7 @@ h2 {
     position: absolute;
     top: 10px;
     left: 10px;
-    width: 90%;
-    max-width: 300px;
+    width: 300px;
 }
 
 textarea {
