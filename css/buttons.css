@@ -1,0 +1,114 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo de atrás de todas las páginas */
+
+
+body{
+    font-family: 'Nunito', sans-serif;
+    font-weight: bolder;
+    background-color: #c3b9ae;
+    color: white;
+}
+
+/*  */
+
+
+h1 {
+    text-align: center;
+    padding-top: 20px;
+    color: #fff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 0 auto;
+    /* Menu de captura de gastos */
+    background-color: #c3b9ae;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+label {
+    margin-bottom: 10px;
+    /*Color texto menu*/
+    color: #fff;
+}
+
+input, select, textarea {
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+/*Botón de volver*/
+
+.btn-back {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px;
+    background-color: #e26b35;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    text-decoration: none;
+}
+
+.btn-back:hover {
+    background-color: #7c43bd;
+}
+
+/*Botón de guardar animado*/
+
+.btn-1{
+    background: #e26b35;
+    color: #ffffff;
+    border-radius: 50px;
+    transition: transform 0.3s ease;
+    text-align: center;
+    width: 100px;
+    margin-top: 20px;
+    align-self: center;
+    padding: 10px;
+    text-decoration: none;
+    position: relative; /* Importante: Agregamos position relative para que los pseudoelementos se posicionen respecto al botón */
+    display: inline-block; /* Agregamos display inline-block para que los pseudoelementos puedan tener dimensiones */
+}
+
+.btn-1::after, .btn-1::before{
+    content: "";
+    position: absolute;
+    opacity: 0.3;
+    /*Sombra del Botón de guardar animado*/
+    background: #e53003;
+    border-radius: inherit;
+    width: 100%; /* Ajustamos la anchura al 100% del botón */
+    height: 100%; /* Ajustamos la altura al 100% del botón */
+    top: 0; /* Ajustamos la posición inicial de top a 0 */
+    left: 0; /* Ajustamos la posición inicial de left a 0 */
+    z-index: -1;
+    transition: transform 0.3s ease;
+}
+
+.btn-1:hover{
+    transform: translate(-12px, -12px);
+}
+
+.btn-1:hover::after{
+    transform: translate(6px, 6px);
+}
+
+.btn-1:hover::before{
+    transform: translate(12px, 12px);
+}
