@@ -1,13 +1,11 @@
 
 
-
-
 const form = document.getElementById('chat-form');
 const mytextInput = document.getElementById('mytext');
 const responseTextarea = document.getElementById('response');
 const loader = document.getElementById('loader');
 
-const API_KEY = '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';
+const API_KEY = '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';
 
 form.addEventListener('submit', async (e) => {
     e.preventDefault();
